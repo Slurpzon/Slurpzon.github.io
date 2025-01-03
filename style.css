@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow: hidden; /* Prevent default scrollbars */
+}
+
+#i4nj {
+  background-image: url("assets/webbg.png");
+  background-position: 0px 0px;
+  background-size: 633px 633px;
+  background-repeat: repeat;
+  background-origin: padding-box;
+  image-rendering: pixelated; /* Ensures nearest-neighbor scaling */
+  animation: scrollRight 10s linear infinite;
+}
+
+@keyframes scrollRight {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 633px 633px; /* Adjust for scrolling right */
+  }
+}
